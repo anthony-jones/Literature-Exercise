@@ -1,5 +1,5 @@
 
-public class Book implements Comparable<Book> {
+public class Book {
     private String name;
     private int ageRec;
 
@@ -19,10 +19,5 @@ public class Book implements Comparable<Book> {
     @Override
     public String toString() {
         return this.name + " (recommended for " + this.ageRec + " year-olds or older)";
-    }
-
-    @Override
-    public int compareTo(Book o) {
-        return this.ageRec - o.getAgeRec();
     }
 }
